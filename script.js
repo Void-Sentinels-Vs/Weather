@@ -21,7 +21,7 @@ function getTime (){
 
 
 
-    
+    consle.log(hou)
     let bg = document.getElementById("backGround")
     if (hours >= 6 && hours < 18 ){
         
