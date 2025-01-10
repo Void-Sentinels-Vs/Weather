@@ -22,10 +22,18 @@ function getTime (){
 
 
     
+    let bg = document.getElementById("backGround")
+    if (hours >= 6 && hours < 18 ){
+        
+        bg.style.src = "day.jpg"
+    }else if (hours >= 18 && hours < 24){
+        document.getElementById("backGround").appendChild("midday.jpg");
+    }else if ( hours < 6){ 
+        bg.style.src = "day.jpg"
     
-    var imgElement = document.createElement("img");
-    imgElement.src = showwwwwwwwwwwwwwwwwImage;  
-    imgElement.alt = "توضیحات تصویر";  
+    }
+    
+     
 
 
     document.getElementById("imageContainer").appendChild(imgElement);
@@ -35,10 +43,3 @@ function getTime (){
 };    
 
 
-
-
-if (hours >= 6 && hours < 18 ){
-    "day.jpg"
-    document.getElementById("").appendChild(imgElement);
-
-}
