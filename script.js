@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", getTime)
+
+
+function getTime (){ 
+
+
     var currentDate = new Date();
     var hours = currentDate.getHours();
     var minutes = currentDate.getMinutes();
@@ -27,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     alert("کاربر ساعت " + hours + ":" + minutes + " وارد صفحه شد.");
-});    
+};    
 
 
 
