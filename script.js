@@ -6,30 +6,18 @@ function getTime (){
 
     var currentDate = new Date();
     var hours = currentDate.getHours();
-    var minutes = currentDate.getMinutes();
-
-
-
-
     
-    var images = [
-        "image1.jpg",  // مسیر عکس اول
-        "image2.jpg",  // مسیر عکس دوم
-        "image3.jpg"   // مسیر عکس سوم
-    ];
 
-
-
-
+   
     
     let bg = document.getElementById("backGround")
+    
     if (hours >= 6 && hours < 18 ){
-        
-        bg.style.src = "day.jpg"
+         bg.setAttribute('src' , 'images/day.jpg')
     }else if (hours >= 18 && hours < 24){
-        document.getElementById("backGround").appendChild("midday.jpg");
+        bg.setAttribute('src' , 'images/midday.jpg')
     }else if ( hours < 6){ 
-        bg.style.src = "day.jpg"
+        bg.setAttribute('src' , 'images/night.jpg')
     
     }
     
