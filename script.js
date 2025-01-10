@@ -8,8 +8,6 @@ function getTime (){
     var hours = currentDate.getHours();
     
 
-   
-    
     let bg = document.getElementById("backGround")
     
     if (hours >= 6 && hours < 18 ){
