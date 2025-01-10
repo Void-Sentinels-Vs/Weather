@@ -37,4 +37,8 @@ function getTime (){
 
 
 
+if (hours >= 6 && hours < 18 ){
+    "day.jpg"
+    document.getElementById("").appendChild(imgElement);
 
+}
