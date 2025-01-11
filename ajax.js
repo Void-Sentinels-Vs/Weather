@@ -10,8 +10,11 @@ function loadData(location){
     xhr.open('GET',url);
     xhr.onload = function(){
         const dataApi = JSON.parse(this.response);
-        console.log(dataApi.current);
-        // tempResult.textContent = dataApi.current.temp_c;
+        // console.log(dataApi.current);
+        tempResult.textContent = dataApi.current.temp_c;
+        humidity.textContent = dataApi.current.humidity;
+        rain.textContent = dataApi.current.precip_in;
+        uv.textContent = dataApi.current.uv;
     }
     xhr.send();
 }
