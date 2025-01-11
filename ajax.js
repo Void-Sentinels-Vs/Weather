@@ -11,14 +11,14 @@ function loadData(location){
     xhr.onload = function(){
         const dataApi = JSON.parse(this.response);
         console.log(dataApi.current.temp_c);
-        result.textContent = dataApi.current.temp_c;
+        tempResult.textContent = dataApi.current.temp_c;
     }
     xhr.send();
 }
 
 // button & place & input selection
 const btn = document.querySelector('.btn');
-const result = document.querySelector('#result');
+const tempResult = document.querySelector('#tempResult');
 const input = document.querySelector('.input');
 btn.addEventListener('click',function(){
     loadData(input.value);
