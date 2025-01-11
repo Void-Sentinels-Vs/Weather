@@ -10,17 +10,22 @@ function loadData(location){
     xhr.open('GET',url);
     xhr.onload = function(){
         const dataApi = JSON.parse(this.response);
-        console.log(dataApi.current.temp_c);
-        tempResult.textContent = dataApi.current.temp_c;
+        console.log(dataApi.current);
+        // tempResult.textContent = dataApi.current.temp_c;
     }
     xhr.send();
 }
 
-// button & place & input selection
+// button & input selection
 const btn = document.querySelector('.btn');
-const tempResult = document.querySelector('#tempResult');
 const input = document.querySelector('.input');
 btn.addEventListener('click',function(){
     loadData(input.value);
 });
 
+
+// results selection
+const tempResult = document.querySelector('.tempResult');
+const humidity = document.querySelector('.humidity');
+const rain = document.querySelector('.rain');
+const uv = document.querySelector('.uv');
