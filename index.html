@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img id="backGround" src="" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img id="backGround" src="" alt="" />
     <main>
+        <div id="topSection">
+      <div id="leftSection">
         <h1>Check The Weather</h1>
-        <input class="input" type="text" placeholder="Choose a City">
-        <p id="result"></p>
+        <input class="input" type="text" placeholder="Choose a City" />
         <button class="btn">Click</button>
+      </div>
+      <div id="rightSection">
+        <img src="images/right.jpg" alt="" />
+      </div>
+    </div>
+      <div id="buttomSection">
+        <div>
+            <img src="" alt="">
+            <h2>temperature</h2>
+          <p id="tempResult"></p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
     <script src="ajax.js"></script>
-</body>
+  </body>
 </html>
