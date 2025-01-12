@@ -11,10 +11,10 @@ function loadData(location){
     xhr.onload = function(){
         const dataApi = JSON.parse(this.response);
         // console.log(dataApi.current);
-        tempResult.textContent = dataApi.current.temp_c;
-        humidity.textContent = dataApi.current.humidity;
-        rain.textContent = dataApi.current.precip_in;
-        uv.textContent = dataApi.current.uv;
+        tempResult.textContent = dataApi.current.temp_c + '°C';
+        humidity.textContent = dataApi.current.humidity + '%';
+        rain.textContent = dataApi.current.precip_in + 'in';
+        uv.textContent = dataApi.current.uv + 'UV';
     }
     xhr.send();
 }
