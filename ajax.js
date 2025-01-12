@@ -25,6 +25,7 @@ const input = document.querySelector('.input');
 btn.addEventListener('click',function(){
     //validation
      try {
+        // empty input
         if(input.value == ''){
             throw new Error('input cant be empty');
         }
