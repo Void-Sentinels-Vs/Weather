@@ -7,3 +7,10 @@ Team Members:
 3.Paryan Talashki
 
 team project for amirHossein Khateri class => Click Academy
+
+sorting-algorithm
+Task👇🏻
+
+👨🏻 hadi => API and JS
+👩🏻‍🦰 Paryan => HTML & CSS
+🧑🏻‍🦱 Arshia => HTML & CSS & JS
