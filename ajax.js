@@ -23,6 +23,14 @@ function loadData(location){
 const btn = document.querySelector('.btn');
 const input = document.querySelector('.input');
 btn.addEventListener('click',function(){
+    //validation
+     try {
+        if(input.value == ''){
+            throw new Error('input cant be empty');
+        }
+       } catch (error) {
+        return console.error(error);
+       }
     loadData(input.value);
 });
 
